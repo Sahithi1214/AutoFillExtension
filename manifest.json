@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AutoFill Pro",
+  "version": "1.0",
+  "description": "Autofill application forms with your personal and professional info.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 

@@ -1,0 +1,81 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 40px;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #2d3748;
+}
+section {
+  margin-bottom: 32px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #4a5568;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #2563eb;
+}
+.add-btn {
+  background: #38a169;
+}
+.add-btn:hover {
+  background: #2f855a;
+}
+.remove-btn {
+  background: #e53e3e;
+}
+.remove-btn:hover {
+  background: #c53030;
+}
+.flex-row {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  #root {
+    padding: 16px 6px;
+  }
+  .flex-row {
+    flex-direction: column;
+    gap: 0;
+  }
+} 
